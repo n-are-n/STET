@@ -1,0 +1,84 @@
+* {
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+body {
+    background-color: aqua;
+}
+
+input:focus {
+    box-shadow: 0px 0px 2.5px 0px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    outline: none;
+    background-color: aqua;
+    border: none;
+}
+
+form {
+    background-color: white;
+    padding: 9px 15px;
+    display: inline-block;
+    position: relative;
+    top: 15rem;
+    left: 57rem;
+    text-align: center;
+    border-radius: 2rem;
+    animation: shadow linear 2s infinite alternate-reverse;
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    to {
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0);
+    }
+}
+
+h3 {
+    display: inline;
+    font-size: x-large;
+}
+
+.logo {
+    text-align: center;
+}
+
+input[id="id"] {
+    position: relative;
+    left: 4.5rem;
+}
+
+input[type="submit"] {
+    margin: 0;
+    position: relative;
+    left: -1rem;
+    font-size: x-large;
+    border-radius: 1rem;
+    color: gray;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, aqua 0%, #FFFFFF 51%, aqua 100%);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-position: right center;
+}
+
+.reg {
+    font-size: x-large;
+    text-align: center;
+}
