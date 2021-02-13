@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link href="Assets/Pics/sikim.png" rel="icon" type="image/png">
+        <link rel="stylesheet" href="Assets/Css/reg.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Secondary Teacher Eligibility Test" name="description">
+        <meta content="STET,Teacher Exam,Online exam for secondary teachers eligibility test" name="keywords">
+        <meta name="author" content="Deepika">
+        <title>Reg</title>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <div class="logo">
+                    <img alt="This image can't be viewed in your browser" loading="lazy" src="Assets/Pics/sikkim.png">
+                    <h1>Sikkim School Examination Board</h1>
+                </div>
+                <legend>
+                    <h2>Registeration Form</h2>
+                </legend>
+            </section>
+            <section>
+                <!-- Registration Form -->
+                <form action="reg.php" method="POST">
+                    <div class="form left">
+                        <label for="name">
+                            <strong>
+                                <h3>Full Name : </h3>
+                            </strong>
+                        </label>
+                        <input type="text" id="name" name="Name" pattern="[a-z A-Z]+" placeholder="Full Name"
+                            title="Deepika" autofocus><br>
+                        <label for="number">
+                            <strong>
+                                <h3>Phone Number : </h3>
+                            </strong>
+                        </label>
+                        <input name="Number" id="number" pattern="[0-9]{10}" placeholder="Phone Number"
+                            title="0123456789" type="tel"><br>
+                        <label for="mail">
+                            <strong>
+                                <h3>Mail ID : </h3>
+                            </strong>
+                        </label>
+                        <input name="Mail" id="mail" placeholder="Mail ID" title="deepika@yahoo.com" type="email"><br>
+                        <label for="dob">
+                            <strong>
+                                <h3>Date Of Birth : </h3>
+                            </strong>
+                        </label>
+                        <input name="dob" id="dob" type="date"><br>
+                        <label for="address">
+                            <strong>
+                                <h3>Address : </h3>
+                            </strong>
+                        </label>
+                        <textarea cols="23" id="address" name="Address" placeholder="Address..."
+                            rows="4"></textarea><br>
+                        <label for="position">
+                            <strong>
+                                <h3>Post : </h3>
+                            </strong>
+                        </label>
+                        <select id="position" name="Position">
+                            <option value="Primary Teacher">Primary</option>
+                            <option value="Graduate Teacher">Graduate</option>
+                            <option value="Post-Graduate Teacher">Post</option>
+                        </select><br>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="form right">
+                        <label for="pic">
+                            <strong>
+                                <h3>Profile-Photo : </h3>
+                            </strong>
+                        </label>
+                        <input id="pic" accept="image/*" name="Profile-Photo" type="file"><br>
+                        <label for="birth">
+                            <strong>
+                                <h3>Birth-Certificate : </h3>
+                            </strong>
+                        </label>
+                        <input id="birth" accept=".pdf,.docx" name="Birth-Certificate" type="file"><br>
+                        <label for="community">
+                            <strong>
+                                <h3>Community-Certificate : </h3>
+                            </strong>
+                        </label>
+                        <input id="community" accept=".pdf,.docx" name="Community-Certificate" type="file"><br>
+                        <label for="tenth">
+                            <strong>
+                                <h3>10th-Marksheet : </h3>
+                            </strong>
+                        </label>
+                        <input id="tenth" accept=".pdf,.docx" name="10th-Marksheet" type="file"><br>
+                        <label for="twelve">
+                            <strong>
+                                <h3>12th-Marksheet : </h3>
+                            </strong>
+                        </label>
+                        <input id="twelve" accept=".pdf,.docx" name="12th-Marksheet" type="file"><br>
+                        <label for="ugc">
+                            <strong>
+                                <h3>UG-Certificate : </h3>
+                            </strong>
+                        </label>
+                        <input id="ugc" accept=".pdf,.docx" name="UG-Certificate" type="file"><br>
+                        <label for="pgc">
+                            <strong>
+                                <h3>PG-Certificate : </h3>
+                            </strong>
+                        </label>
+                        <input id="pgc" accept=".pdf,.docx" name="PG-Certificate" type="file"><br>
+                    </div>
+                    <div class="login">
+                        <p>Existing User ? <a href="login.html"><b>login</b></a></p>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+
+</html>

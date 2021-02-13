@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="Assets/Css/login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <div class="logo">
+                    <img alt="This image can't be viewed in your browser" loading="lazy" src="Assets/Pics/sikkim.png">
+                    <h1>Sikkim School Examination Board</h1>
+                    <legend>
+                        <h2>Login Form</h2>
+                    </legend>
+                </div>
+            </section>
+            <section>
+                <form action="login.php" name="form" method="post">
+                    <label for="id">
+                        <strong>
+                            <h3>
+                                ID :
+                            </h3>
+                        </strong>
+                    </label>
+                    <input type="tel" name="admit" id="id" placeholder="Admit Card ID" title="60000*" pattern="[0-9]{6}"
+                        autofocus required><br><br>
+                    <label for="number">
+                        <strong>
+                            <h3>Phone Number : </h3>
+                        </strong>
+                    </label>
+                    <input type="tel" name="phone" id="number" placeholder="Phone Number" title="0123456789"
+                        pattern="[0-9]{10}" required><br><br>
+                    <input type="submit" value="Submit">
+                    <div class="reg">
+                        <p>New User ? <a href="reg.html"><b>register</b></a></p>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+
+</html>
